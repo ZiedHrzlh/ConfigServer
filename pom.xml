@@ -23,7 +23,24 @@
                     <failOnNoGitDirectory>false</failOnNoGitDirectory>
                 </configuration>
             </plugin>
+
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <mainClass>com.veterinary.config.VeterinaryConfigServerApplication</mainClass>
+                        <layout>JAR</layout>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
         </plugins>
+
     </build>
 
     <dependencies>
@@ -46,5 +63,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <properties>
+        <start-class>com.veterinary.config.VeterinaryConfigServerApplication</start-class>
+    </properties>
 </project>
