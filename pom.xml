@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.easyms</groupId>
         <artifactId>easyms-sdk</artifactId>
-        <version>1.0.7-SNAPSHOT</version>
+        <version>1.0.6</version>
     </parent>
 
     <artifactId>veterinary-config-server</artifactId>
